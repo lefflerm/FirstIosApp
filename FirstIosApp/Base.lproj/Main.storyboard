@@ -16,12 +16,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Astro.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-xY-zX3">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HWd-2X-fkZ">
+                                <rect key="frame" x="40" y="356" width="240" height="29"/>
+                                <segments>
+                                    <segment title="Astro"/>
+                                    <segment title="Fluffy"/>
+                                    <segment title="Munchie"/>
+                                    <segment title="Squido"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.93742193250106143" blue="0.94845784632792918" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeMonster:" destination="BYZ-38-t0r" eventType="valueChanged" id="pJc-ts-1Eu"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.34299565439283797" blue="0.64219370687809985" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="monsterImageView" destination="9Xa-xY-zX3" id="pXK-es-f1I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="364"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Astro.png" width="300" height="420"/>
+    </resources>
 </document>
