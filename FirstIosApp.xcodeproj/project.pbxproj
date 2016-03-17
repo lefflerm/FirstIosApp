@@ -18,6 +18,7 @@
 		3F23DEF91C989AD90024C484 /* Munchie.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F23DEF51C989AD90024C484 /* Munchie.png */; };
 		3F23DEFA1C989AD90024C484 /* Squido.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F23DEF61C989AD90024C484 /* Squido.png */; };
 		3F8059581C9B3630006F6B28 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8059571C9B3630006F6B28 /* NewViewController.swift */; };
+		3F80595A1C9B3B66006F6B28 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8059591C9B3B66006F6B28 /* NewTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3F23DEF51C989AD90024C484 /* Munchie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Munchie.png; sourceTree = "<group>"; };
 		3F23DEF61C989AD90024C484 /* Squido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Squido.png; sourceTree = "<group>"; };
 		3F8059571C9B3630006F6B28 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		3F8059591C9B3B66006F6B28 /* NewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3F23DEF51C989AD90024C484 /* Munchie.png */,
 				3F23DEF61C989AD90024C484 /* Squido.png */,
 				3F8059571C9B3630006F6B28 /* NewViewController.swift */,
+				3F8059591C9B3B66006F6B28 /* NewTableViewController.swift */,
 			);
 			path = FirstIosApp;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F80595A1C9B3B66006F6B28 /* NewTableViewController.swift in Sources */,
 				3F23DEE21C9890310024C484 /* ViewController.swift in Sources */,
 				3F23DEF21C9896100024C484 /* Jokes.swift in Sources */,
 				3F23DEE01C9890310024C484 /* AppDelegate.swift in Sources */,

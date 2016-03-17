@@ -36,4 +36,15 @@ class NewViewController: UIViewController {
     }
     */
 
+    @IBAction func goToTableView(sender: UIButton) {
+        
+        performSegueWithIdentifier("GoToTableView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "GoToTableView" {
+            _ = segue.destinationViewController as? NewTableViewController
+        }
+    }
+    
 }
