@@ -10,8 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var amountTextField: UITextField!
+    
+    
+    @IBOutlet weak var tipPercentTextField: UITextField!
+    
+    
     @IBOutlet weak var monsterImageView: UIImageView!
+    
+    
+    @IBOutlet weak var tipLabel: UILabel!
+    
+    
     var monsters = ["Astro", "Fluffy", "Munchie", "Squido"]
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +43,25 @@ class ViewController: UIViewController {
         let index = sender.selectedSegmentIndex
         monsterImageView.image = UIImage(named: monsters[index])
     }
+
+
+    @IBAction func calculateTip(sender: UIButton) {
+        var tip = 0.0
+        var dAmount = 0.0
+        var dPercent = 0.0
+        
+        if let amount = amountTextField.text, percent = tipPercentTextField.text {
+            dAmount = Double(amount)!
+            dPercent = Double(percent)!
+            tip = dAmount * dPercent
+            
+        }
+        
+        tipLabel.text = "Tip is $\(String(tip))"
+        
+    }
+
+
 
 }
 
